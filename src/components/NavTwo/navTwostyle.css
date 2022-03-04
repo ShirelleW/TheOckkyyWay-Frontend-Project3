@@ -1,0 +1,4 @@
+#navTwoItems{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+#title{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+

@@ -1,0 +1,8 @@
+.cart-container{
+    display: flex;
+    margin-left: -20px;
+}
+#cart{
+    margin-top: 1rem;
+    margin-right: 15px;
+}
