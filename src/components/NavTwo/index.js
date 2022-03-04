@@ -56,7 +56,10 @@ const NavTwo = () => {
                         >Gum & Mints</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Item>Toiletries</Menu.Item>
+                <Menu.Item
+                    name="Toiletries"
+                    onClick={()=> handleItemClick("toiletries")}
+                />
             </Menu>
         </div>
     );

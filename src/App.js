@@ -13,6 +13,7 @@ import Drinks from './pages/Drinks';
 import FruitSnacks from './pages/FruitSnacks';
 import SaltySnacks from './pages/SaltySnacks';
 import GumandMints from './pages/GumandMints';
+import Toiletries from './pages/Toiletries';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='fruitsnacks' element={<FruitSnacks />} />
         <Route path='saltysnacks' element={<SaltySnacks />} />
         <Route path='gumandmints' element={<GumandMints />} />
+        <Route path='toiletries' element={<Toiletries />} />
       </Routes>
     </div>
   );
