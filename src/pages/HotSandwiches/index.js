@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 import './style.css'
 
-const HotSandwiches = () => {
+const HotSandwiches = ( {handleAddProduct} ) => {
 
     const [hotSandwiches, setHotSandwiches] = useState([])
 
@@ -27,7 +27,7 @@ const HotSandwiches = () => {
 
     return (
         <div>
-            <h3 id="title">Hot Sanwhiches</h3>
+            <h3 id="title">Hot Sandwhiches</h3>
             <div className='content'>
                 {
                     hotSandwiches.map((item) => {
@@ -43,7 +43,7 @@ const HotSandwiches = () => {
                                 </Card.Content>
                                 <Card.Content extra>
                                     <a>
-                                        <Icon name='shopping cart' />
+                                        <Icon name='shopping cart' onClick={() => handleAddProduct(item)}/>
                                         Add To Cart
                                     </a>
                                 </Card.Content>
