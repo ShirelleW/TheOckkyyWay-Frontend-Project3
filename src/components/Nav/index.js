@@ -25,7 +25,10 @@ const Nav = () => {
                         <Input icon='search' placeholder='Search...' />
                     </Menu.Item>
                     <Menu.Item>
-                         <Input icon='shopping cart' />
+                         <Input icon='shopping cart'
+                         placeholder="Items in Cart"
+                         onClick={()=> handleItemClick("cart")}
+                         />
                     </Menu.Item>
                 </Menu.Menu>
             </Menu>

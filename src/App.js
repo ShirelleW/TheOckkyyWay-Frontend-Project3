@@ -14,6 +14,7 @@ import FruitSnacks from './pages/FruitSnacks';
 import SaltySnacks from './pages/SaltySnacks';
 import GumandMints from './pages/GumandMints';
 import Toiletries from './pages/Toiletries';
+import Cart from './components/Cart';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='saltysnacks' element={<SaltySnacks />} />
         <Route path='gumandmints' element={<GumandMints />} />
         <Route path='toiletries' element={<Toiletries />} />
+        <Route path='cart' element={<Cart />} />
       </Routes>
     </div>
   );
