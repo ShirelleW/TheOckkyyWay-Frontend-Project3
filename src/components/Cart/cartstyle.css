@@ -1,0 +1,27 @@
+.cart-items-images{
+    width: 200px;
+    height: 150px;
+}
+
+.cart-items-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 30px;
+}
+
+.cart-items-add{
+    background-color: greenyellow;
+}
+
+.cart-items-remove{
+    background-color: rgb(252, 137, 71);
+}
+.display-total-price{
+    text-align: center; 
+    font-weight: bold;
+    font-size: large;
+}

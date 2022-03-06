@@ -47,26 +47,32 @@ const App = () => {
     }
   }
 
+
+  const handleCartClearance = () => {
+    setCartItems([])
+  }
+
   return (
     <div>
 
-      <Nav />
+      <Nav cartItems={cartItems}/>
       <NavTwo />
 
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='hotsandwiches' element={<HotSandwiches handleAddProduct={handleAddProduct}/>} />
-        <Route path='coldsandwiches' element={<ColdSandwiches />} />
-        <Route path='chickenmeals' element={<ChickenMeals />} />
-        <Route path='chocolate' element={<Chocolate />} />
-        <Route path='drinks' element={<Drinks />} />
-        <Route path='fruitsnacks' element={<FruitSnacks />} />
-        <Route path='saltysnacks' element={<SaltySnacks />} />
-        <Route path='gumandmints' element={<GumandMints />} />
-        <Route path='toiletries' element={<Toiletries />} />
+        <Route path='coldsandwiches' element={<ColdSandwiches handleAddProduct={handleAddProduct}/>} />
+        <Route path='chickenmeals' element={<ChickenMeals handleAddProduct={handleAddProduct}/>} />
+        <Route path='chocolate' element={<Chocolate handleAddProduct={handleAddProduct}/>} />
+        <Route path='drinks' element={<Drinks handleAddProduct={handleAddProduct}/>} />
+        <Route path='fruitsnacks' element={<FruitSnacks handleAddProduct={handleAddProduct}/>} />
+        <Route path='saltysnacks' element={<SaltySnacks handleAddProduct={handleAddProduct}/>} />
+        <Route path='gumandmints' element={<GumandMints handleAddProduct={handleAddProduct}/>} />
+        <Route path='toiletries' element={<Toiletries handleAddProduct={handleAddProduct}/>} />
         <Route path='cart' element={<Cart cartItems={cartItems} 
                           handleAddProduct={handleAddProduct}
-                          handleRemoveProduct={handleRemoveProduct}/>} />
+                          handleRemoveProduct={handleRemoveProduct}
+                          handleCartClearance={handleCartClearance} />} />
       </Routes>
     </div>
   );

@@ -5,7 +5,7 @@ import { Input, Menu } from 'semantic-ui-react'
 import './Navstyle.css'
 
 
-const Nav = () => {
+const Nav = ( {cartItems} ) => {
 
     const navigate = useNavigate()
 
@@ -26,7 +26,8 @@ const Nav = () => {
                     </Menu.Item>
                     <Menu.Item>
                          <Input icon='shopping cart'
-                         placeholder="Items in Cart"
+                        //  How to get it to change each time an item is added from the cart page? 
+                         placeholder={cartItems.length + " Different items in Cart" } 
                          onClick={()=> handleItemClick("cart")}
                          />
                     </Menu.Item>

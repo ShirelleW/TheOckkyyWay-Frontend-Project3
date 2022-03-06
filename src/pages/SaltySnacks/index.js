@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 
-const SaltySnacks = () => {
+const SaltySnacks = ( {handleAddProduct} ) => {
 
     const [saltySnacks, setSaltySnacks] = useState([])
 
@@ -43,7 +43,7 @@ const SaltySnacks = () => {
                                 </Card.Content>
                                 <Card.Content extra>
                                     <a>
-                                        <Icon name='shopping cart' />
+                                        <Icon name='shopping cart' onClick={() => handleAddProduct(item)}/>
                                         Add To Cart
                                     </a>
                                 </Card.Content>
