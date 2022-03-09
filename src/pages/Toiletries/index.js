@@ -38,7 +38,7 @@ const Toiletries = ( {  handleAddProduct} ) => {
                                     <Card.Header>{item.name}</Card.Header><br></br>
                                     <Card.Meta>{item.description}</Card.Meta><br></br>
                                     <Card.Description>
-                                        {item.price}
+                                        ${item.price}
                                     </Card.Description>
                                 </Card.Content>
                                 <Card.Content extra>

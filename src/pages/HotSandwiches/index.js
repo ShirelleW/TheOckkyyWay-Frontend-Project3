@@ -36,7 +36,7 @@ const HotSandwiches = ( {handleAddProduct} ) => {
                                 <Image id="image" src={item.image} wrapped ui={true} />
                                 <Card.Content>
                                     <Card.Header>{item.name}</Card.Header>
-                                    <Card.Meta>{item.price}</Card.Meta>
+                                    <Card.Meta>${item.price}</Card.Meta>
                                     <Card.Description>
                                         {item.description}
                                     </Card.Description>

@@ -4,6 +4,7 @@ import './cartstyle.css'
 const Cart = ( {cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance} ) => {
 
     const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0)
+    
     return (
         <div className='cart-items'>
             <h2 className='cart-items-header'>Cart Items</h2>

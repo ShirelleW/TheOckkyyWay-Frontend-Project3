@@ -1,0 +1,16 @@
+.product-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 100px;
+}
+.popular-items{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+img{
+    width: 250px;
+    height: 250px; 
+}
