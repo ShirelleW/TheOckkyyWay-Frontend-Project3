@@ -74,3 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 The Ockkyy Way was designed to deliver food and toiletry products to customers and allow them to add them to the cart. 
 
 What I learned: filter and reduce methods. 
+
+I cant deploy my site. 
